@@ -1,3 +1,28 @@
-<p>
-  new-repository works!
-</p>
+<div class="page-layout blank p-24" fusePerfectScrollbar>
+
+  <form [formGroup]="newRepositoryForm" class="example-form" >
+    <mat-form-field class="example-full-width">
+      <mat-label>CUIT/CUIL *</mat-label>
+      <input matInput formControlName="cuil_cuit" type="text" maxlength="11" appCuilmask>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Nombre *</mat-label>
+      <input matInput formControlName="nombre" type="text">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Email </mat-label>
+      <input matInput formControlName="email" type="email">
+    </mat-form-field>
+    <mat-list>
+      <div  fxLayout="row" fxLayoutAlign="center center" style="height: 100%; width: 100%">
+        <button mat-raised-button color="primary" type="submit" [disabled]="!newRepositoryForm.valid" (click)="submitForm()">
+          <span *ngIf="!loading">Siguiente</span>
+
+
+        </button>
+      </div>
+    </mat-list>
+  </form>
+
+</div>
+

@@ -3,15 +3,20 @@ import { CommonModule } from '@angular/common';
 import { ListRepositoryComponent } from './list-repository/list-repository.component';
 import { NewRepositoryComponent } from './new-repository/new-repository.component';
 import { EditRepositoryComponent } from './edit-repository/edit-repository.component';
+
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-
 import { FuseSharedModule } from '@fuse/shared.module';
+import {SharedModule} from "../../shared/shared.module";
 
 const routes = [
     {
-        path     : 'repository',
+        path     : 'repository/list',
         component: ListRepositoryComponent
+    },
+    {
+        path     : 'repository/new',
+        component: NewRepositoryComponent
     }
 ];
 
@@ -22,7 +27,8 @@ const routes = [
     CommonModule,
     RouterModule.forChild(routes),
     TranslateModule,
-    FuseSharedModule
+    FuseSharedModule,
+      SharedModule
   ],
     exports     : [
         ListRepositoryComponent,
