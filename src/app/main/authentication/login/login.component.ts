@@ -5,13 +5,13 @@ import { FuseConfigService } from '@fuse/services/config.service';
 import { fuseAnimations } from '@fuse/animations';
 
 @Component({
-    selector     : 'login-2',
-    templateUrl  : './login-2.component.html',
-    styleUrls    : ['./login-2.component.scss'],
+    selector     : 'login',
+    templateUrl  : './login.component.html',
+    styleUrls    : ['./login.component.scss'],
     encapsulation: ViewEncapsulation.None,
     animations   : fuseAnimations
 })
-export class Login2Component implements OnInit
+export class LoginComponent implements OnInit
 {
     loginForm: FormGroup;
 

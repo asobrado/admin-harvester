@@ -18,6 +18,7 @@ import { AppComponent } from 'app/app.component';
 import { LayoutModule } from 'app/layout/layout.module';
 import { SampleModule } from 'app/main/sample/sample.module';
 import {RepositoryModule} from "./main/repository/repository.module";
+import {MainModule} from "./main/main.module";
 
 const appRoutes: Routes = [
     {

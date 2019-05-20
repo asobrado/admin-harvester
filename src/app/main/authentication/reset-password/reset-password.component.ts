@@ -7,13 +7,13 @@ import { FuseConfigService } from '@fuse/services/config.service';
 import { fuseAnimations } from '@fuse/animations';
 
 @Component({
-    selector     : 'reset-password-2',
-    templateUrl  : './reset-password-2.component.html',
-    styleUrls    : ['./reset-password-2.component.scss'],
+    selector     : 'reset-password',
+    templateUrl  : './reset-password.component.html',
+    styleUrls    : ['./reset-password.component.scss'],
     encapsulation: ViewEncapsulation.None,
     animations   : fuseAnimations
 })
-export class ResetPassword2Component implements OnInit, OnDestroy
+export class ResetPasswordComponent implements OnInit, OnDestroy
 {
     resetPasswordForm: FormGroup;
 

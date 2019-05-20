@@ -24,7 +24,7 @@ import { Error500Module } from 'app/main/errors/500/error-500.module';
         Error500Module,
     ]
 })
-export class PagesModule
+export class MainModule
 {
 
 }
