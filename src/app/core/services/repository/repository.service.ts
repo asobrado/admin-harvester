@@ -12,7 +12,7 @@ import {Repository} from "../../models/repository";
 })
 export class RepositoryService {
 
-    private headers = new HttpHeaders({'Content-Type': 'application/json', 'Authorization': environment.token});
+    private headers = new HttpHeaders({'Access-Control-Allow-Origin': '*','Content-Type': 'application/json', 'Authorization': environment.token});
     public endpoint: string;
 
     constructor(private httpClient: HttpClient) {
@@ -21,7 +21,7 @@ export class RepositoryService {
 
     public getRepository(): Observable<any> {
 
-        return this.httpClient.get(this.endpoint + '/v1/repository', {headers: this.headers})
+        return this.httpClient.get(this.endpoint + '/repository', {headers: this.headers})
 
     }
 
