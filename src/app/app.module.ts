@@ -23,7 +23,7 @@ const appRoutes: Routes = [
     {
         path      : '**',
         redirectTo: 'repository/list'
-    }
+    },
     {
         path        : 'main',
         loadChildren: './main/main.module#MainModule'
