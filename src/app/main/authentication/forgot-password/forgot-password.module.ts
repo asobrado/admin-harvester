@@ -4,7 +4,7 @@ import { MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule } fr
 
 import { FuseSharedModule } from '@fuse/shared.module';
 
-import { ForgotPasswordComponent } from 'app/main/pages/authentication/forgot-password/forgot-password.component';
+import { ForgotPasswordComponent } from 'app/main/authentication/forgot-password/forgot-password.component';
 
 const routes = [
     {

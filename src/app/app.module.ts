@@ -23,7 +23,7 @@ import {MainModule} from "./main/main.module";
 const appRoutes: Routes = [
     {
         path      : '**',
-        redirectTo: 'repository/list'
+        redirectTo: 'auth/login'
     },
     {
         path        : 'main',
