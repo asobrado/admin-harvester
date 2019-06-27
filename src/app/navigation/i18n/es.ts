@@ -10,6 +10,10 @@ export const locale = {
             'REPOSITORY':{
                 'TITLE': 'Repositorio',
                 'BADGE': '25'
+            },
+            'HARVEST':{
+                'TITLE': 'Harvester',
+                'BADGE': '25'
             }
 
         }

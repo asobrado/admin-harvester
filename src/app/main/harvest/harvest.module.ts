@@ -9,4 +9,16 @@ import { NewHarvestComponent } from './new-harvest/new-harvest.component';
     CommonModule
   ]
 })
+
+const routes = [
+    {
+        path     : 'harvest/list',
+        component: ListHarvestComponent
+    },
+    {
+        path     : 'harvest/new',
+        component: NewHarvestComponent
+    }
+];
+
 export class HarvestModule { }

@@ -3,6 +3,9 @@ export const locale = {
     data: {
         'SAMPLE': {
             'HELLO': 'Hello, World!'
+        },
+        'LIST': {
+            'TITLE': 'Listado de Repositorios!'
         }
     }
 };

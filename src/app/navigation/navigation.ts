@@ -27,7 +27,7 @@ export const navigation: FuseNavigation[] = [
                 translate: 'NAV.REPOSITORY.TITLE',
                 type     : 'item',
                 icon     : 'email',
-                url      : '/repository'
+                url      : '/repository/list'
             }
         ]
     }

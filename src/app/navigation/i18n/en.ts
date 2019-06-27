@@ -10,7 +10,12 @@ export const locale = {
             'REPOSITORY':{
                 'TITLE': 'Repository',
                 'BADGE': '25'
+            },
+            'HARVEST':{
+                'TITLE': 'Harvester',
+                'BADGE': '25'
             }
+
         }
     }
 };
